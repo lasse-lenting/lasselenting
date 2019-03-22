@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cookie clicker</title>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  
+  <script type="text/javascript">
+$(document).ready(function(){
+		var counter=0
+		var increment = 1;
+		
+	$("#cookie").click(function(){
+		counter += increment;
+		$("#counter").html("<h1>You have "+counter+" cookies");
+	if (counter>=20){
+		increment = 2;
+	}
+	
+	})
+	})
+  </script>
+  <title>Cookie clicker!</title>
+</head>
+<body>
+<div id="counter">
+  <h1>Click me</h1>
+</div>
+<div id="cookie">
+  <img src="http://3.bp.blogspot.com/-P87VGfPnOFo/Tsf86vgg4jI/AAAAAAAAAfM/1qy0e395Rww/s1600/Who+Took+the+Cookie+-+cookie.png" height="200px">
+</div>
+<div id="audo">
+  <h3>Automatic Power Ups</h3>
+<div id="Upgrade1">
+  <h4>20 cookies</h4><p>2 cookies per click</p>
+</div>
+</div>
+</body>
+</html>
