@@ -14,9 +14,12 @@ $(document).ready(function(){
 	$("#cookie").click(function(){
 		counter += increment;
 		$("#counter").html("<h1>"+counter+" Cookies!");
-	if (counter>=20){
-		increment = 2;
+	
+if (counter>=20){
+setTimeout(function(){
+	increment = 2;
 	}
+}, 500); 
 	if (counter>=40){
 		increment = 4;
 	}
