@@ -1,57 +1,17 @@
-<!DOCTYPE html>
 <html>
-<head>
-  <title>Cookie Clicker</title>
-<link rel="icon" href="Naamloos-2.png">
-  
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-  
-  <script type="text/javascript">
-$(document).ready(function(){
-		var counter=0
-		var increment = 1;
-		
-	$("#cookie").click(function(){
-		counter += increment;
-		$("#counter").html("<h1>"+counter+" Cookies!");
-	
-	if (counter>=20){
-		increment = 2;
-	}
-	if (counter>=40){
-		increment = 4;
-	}
-	if (counter>=60){
-		increment = 6;
-	}
-	if (counter>=80){
-		increment = 8;
-	}
-	if (counter>=100){
-		increment = 10;
-	}
-	
-	})
-	})
-  </script>
-  <title>Cookie clicker!</title>
-</head>
-<body>
-<div id="counter">
-  <h1>Click me</h1>
-</div>
-<div id="cookie">
-	<img src="Naamloos-2.png">
-</div>
-<div id="audo">
-  <h3>Automatic Power Ups</h3>
-<div id="Upgrade1">
-	<p>20 cookies = 2 per click</p>
-	<p>40 cookies = 4 per click</p>
-	<p>60 cookies = 6 per click</p>
-	<p>80 cookies = 8 per click</p>
-	<p>100 cookies = 10 per click</p>
-</div>
-</div>
-</body>
+	<body>
+		<b>Number of Cookies: <span id="cookies"></span></b><br>
+		Cookies produced: <span id="cookies_produced"></span><br>
+		<button onclick="clicker.click();">Make Cookie!</button><br><br>
+
+		Clicker Level: <span id="clicker_level"></span><br>
+		Production: <span id="clicker_productivity"></span><br>
+		Improvement Price: <span id="clicker_price"></span><br>
+		<button onclick="clicker.improve();">Improve</button><br><br>
+
+		<hr><br>
+		<span id="buildings"></span>
+
+		<script src="index.js"></script>
+	</body>
 </html>
